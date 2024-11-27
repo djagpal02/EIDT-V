@@ -11,6 +11,7 @@ This repository provides a implementation of **EIDT-V**, leveraging diffusion mo
 
 - Docker installed on your machine.
 - Access to a compatible GPU (NVIDIA recommended).
+- HuggingFace access token for Llama 3 (to be put in `Code/Llama/login.py`)
 
 ### Running the Program
 
