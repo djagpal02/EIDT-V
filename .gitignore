@@ -1,0 +1,31 @@
+# Ignore Python compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+.env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files and temp files
+*.log
+*.tmp
+*.bak
+
+# Ignore node modules and other package directories
+node_modules/
+dist/
+build/
+
+# Ignore environment variables and secrets
+.env
+*.env
+
+# Specific file to ignore
+code/Llama/login.py
