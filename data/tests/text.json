@@ -1,0 +1,211 @@
+{
+
+    "A corgi is running and another corgi joins.":{
+        "text_source": "direct2v",
+        "num_frames": 8,
+        "frames": [
+            "A corgi is running on a grassy field, its ears flopping as it moves.",
+            "The corgi continues running, a second corgi starts to appear in the background.",
+            "The second corgi starts to run, playfully chasing the first corgi.",
+            "The first corgi maintains its pace, the second corgi getting closer.",
+            "Both corgis are running side by side, their short legs moving quickly.",
+            "The second corgi starts to take the lead, the first corgi following closely.",
+            "Both corgis continue running, their tails wagging happily as they race.",
+            "The first corgi begins to catch up, the two corgis running neck and neck."
+        ]
+    },
+
+    "A rainbow is forming": {
+        "text_source": "freebloom",
+        "num_frames": 6,
+        "frames": [
+            "The sky, partially cloudy, with faint hints of colors starting to emerge.",
+            "A faint arch of colors becomes visible, stretching across the sky.",
+            "The rainbow gains intensity as the colors become more vibrant and defined.",
+            "The rainbow is now fully formed, displaying its classic arc shape.",
+            "The colors of the rainbow shine brilliantly against the backdrop of the sky.",
+            "The rainbow remains steady, its colors vivid and captivating as the rainbow decorates the sky."
+        ]
+    },
+
+    "A thunderstorm developing over a sea": {
+        "text_source": "freebloom",
+        "num_frames": 6,
+        "frames": [
+            "A serene view of the sea under clear skies, with a few fluffy white clouds in the distance.",
+            "Darker clouds gathering at the horizon as the sea starts to become choppy with rising waves.",
+            "Lightning streaks across the sky, illuminating the dark clouds, and raindrops begin to fall onto the sea's surface.",
+            "The thunderstorm intensifies with heavy rain pouring down, and strong winds whip up the sea, creating large waves.",
+            "Lightning strikes become more frequent, illuminating the turbulent sea with flashes of light.",
+            "The storm reaches its peak, with menacing dark clouds covering the entire sky, and the sea becomes a tumultuous mass of crashing waves and heavy rainfall."
+        ]
+    },
+
+    "Flowers blooming": {
+        "text_source": "freebloom",
+        "num_frames": 6,
+        "frames": [
+            "A group of closed buds can be seen on the stem of a plant.",
+            "The buds begin to slowly unfurl, revealing small petals.",
+            "The petals continue to unfurl, revealing more of the flower's center.",
+            "The petals are now fully opened, and the center of the flower is visible.",
+            "The flower's stamen and pistil become more prominent, and the petals start to curve outward.",
+            "The fully bloomed flowers are in full view, with their petals open wide and displaying their vibrant colors."
+        ]
+    },
+
+    "Volcano eruption": {
+        "text_source": "freebloom",
+        "num_frames": 6,
+        "frames": [
+            "A towering volcano stands against a backdrop of clear blue skies, with no visible signs of activity.",
+            "Suddenly, a plume of thick smoke and ash erupts from the volcano's summit, the plume billowing high into the air.",
+            "Molten lava begins to flow down the volcano's slopes, the lava glowing brightly with intense heat and leaving a trail of destruction in its path.",
+            "Explosions rock the volcano as fiery projectiles shoot into the sky, the projectiles scattering debris and ash in all directions.",
+            "The eruption intensifies, with a massive column of smoke and ash ascending into the atmosphere, the column darkening the surrounding area and creating a dramatic spectacle.",
+            "As the eruption reaches its peak, a pyroclastic flow cascades down the volcano's sides, the flow engulfing everything in its path with a deadly combination of hot gases, ash, and volcanic material."
+        ]
+    },
+
+    "A tree changes through the seasons": {
+        "text_source": "ChatGPT",
+        "num_frames": 12,
+        "frames": [
+            "A lush green tree stands under a bright summer sky.",
+            "Leaves begin to show hints of yellow and orange.",
+            "The foliage turns vibrant with autumn colors.",
+            "Leaves start to fall, scattering around the tree base.",
+            "The tree becomes nearly bare as more leaves drop.",
+            "Only a few leaves cling to the branches against a grey sky.",
+            "Snow begins to fall, dusting the branches lightly.",
+            "The tree stands covered in a blanket of snow.",
+            "Buds appear as the snow melts away in early spring.",
+            "Fresh green leaves start to unfurl from the branches.",
+            "The tree regains its full canopy of green leaves.",
+            "The tree thrives under the warm sun, completing the cycle."
+        ]
+    },
+
+    "A city skyline transforms from day to night": {
+        "text_source": "ChatGPT",
+        "num_frames": 10,
+        "frames": [
+            "A bustling city skyline under the bright midday sun.",
+            "Shadows lengthen as afternoon progresses.",
+            "The sky takes on hues of orange and pink at sunset.",
+            "Buildings reflect the warm colors of the setting sun.",
+            "The sun dips below the horizon, and lights start to flicker on.",
+            "The sky deepens to twilight, stars begin to appear.",
+            "City lights illuminate buildings and streets.",
+            "Neon signs and billboards glow vibrantly.",
+            "The skyline is aglow with lights against the dark sky.",
+            "The city pulses with energy under a canopy of stars."
+        ]
+    },
+
+    "A paper boat sails across a pond": {
+        "text_source": "ChatGPT",
+        "num_frames": 8,
+        "frames": [
+            "A serene pond with a paper boat floating near the edge.",
+            "Gentle ripples push the boat away from the shore.",
+            "The boat drifts past lily pads and reeds.",
+            "A frog leaps nearby, causing small waves.",
+            "The boat sails towards the center of the pond.",
+            "Reflections of trees and sky ripple around the boat.",
+            "A light breeze propels the boat further along.",
+            "The paper boat continues its journey under a setting sun."
+        ]
+    },
+
+    "A castle rises from ruins": {
+        "text_source": "ChatGPT",
+        "num_frames": 18,
+        "frames": [
+            "An abandoned site with scattered stone ruins.",
+            "Vegetation recedes as restoration begins.",
+            "Foundation stones align to form the base.",
+            "Walls start to build up layer by layer.",
+            "Archways and windows emerge in the stonework.",
+            "Towers ascend, reaching toward the clouds.",
+            "A grand gate forms at the castle's entrance.",
+            "Battlements and parapets crown the walls.",
+            "Colorful banners unfurl atop the highest towers.",
+            "A drawbridge extends over a newly formed moat.",
+            "Gardens bloom within the castle courtyards.",
+            "People appear, bringing life to the castle grounds.",
+            "Knights patrol the walls, and villagers bustle below.",
+            "Market stalls set up outside the castle gates.",
+            "A festival atmosphere fills the surrounding area.",
+            "As night falls, torches light up along the walls.",
+            "Fireworks burst above the castle in celebration.",
+            "The castle stands majestically, fully restored and vibrant."
+        ]
+    },
+
+    "A rocket launches into space": {
+        "text_source": "ChatGPT",
+        "num_frames": 14,
+        "frames": [
+            "A rocket stands tall on the launch pad at dawn.",
+            "Engineers and crew prepare for launch.",
+            "Countdown begins as steam billows from the rocket.",
+            "Engines ignite, and flames burst from below.",
+            "The rocket lifts off, slowly rising above the pad.",
+            "It accelerates upward, leaving a trail of smoke.",
+            "The rocket pierces through clouds into the upper atmosphere.",
+            "First-stage boosters separate and fall away.",
+            "The rocket continues its ascent into the darkness of space.",
+            "Earth's curvature becomes visible below.",
+            "The payload fairing opens to reveal a satellite.",
+            "The satellite deploys, unfolding its solar panels.",
+            "The rocket's final stage drifts away as the mission completes.",
+            "The satellite begins orbiting Earth, the rocket fades into space."
+        ]
+    },
+
+    "A snowman melts under the sun": {
+        "text_source": "ChatGPT",
+        "num_frames": 8,
+        "frames": [
+            "A freshly built snowman stands in a snowy yard.",
+            "The sun rises, casting warm light on the snowman.",
+            "Small droplets form as the snow begins to melt.",
+            "The snowman's edges soften, and features blur.",
+            "The carrot nose tilts as the head starts shrinking.",
+            "One of the stick arms falls to the ground.",
+            "The snowman becomes a lump of melting snow.",
+            "Only a puddle remains with the scarf and hat atop."
+        ]
+    },
+
+    "A student tests the new AI": {
+        "text_source": "Edge Case",
+        "num_frames": 10,
+        "frames": [
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI",
+            "A student tests the new AI"
+        ]
+    },
+
+    "An AI learns to walk": {
+        "text_source": "Edge Case",
+        "num_frames": 6,
+        "frames": [
+            "A giraffe learns to play the piano.",
+            "Clouds form the shape of a giant teapot.",
+            "Penguins organize a beach volleyball tournament.",
+            "A tree grows candy canes instead of leaves.",
+            "Submarines race through fields of underwater corn.",
+            "The moon turns into a disco ball for one night."
+        ]
+    }
+}

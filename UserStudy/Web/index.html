@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GIF Evaluation Study</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .video-box {
+      flex: 1 1 45%;
+      box-sizing: border-box;
+    }
+    .video-box img {
+      width: 100%;
+      height: auto;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    input[type="button"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .instructions {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    #content {
+      display: none;
+    }
+    /* Add styling for the button container */
+    .button-container {
+        margin: 20px 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .button-container button {
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        transition: background-color 0.3s;
+    }
+    
+    .button-container button:hover {
+        background-color: #45a049;
+    }
+    
+    .button-container button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+    /* Add to existing styles */
+    ul, ol {
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    ul li, ol li {
+        margin-bottom: 8px;
+    }
+    
+    strong {
+        color: #2c5282;
+    }
+    /* Add to existing styles */
+    .progress-indicator {
+        background-color: #2c5282;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Replace the single start button with two options -->
+  <h2>Video Evaluation Study</h2>
+  <p>Choose a study version to begin:</p>
+  <p><strong>Note:</strong></p>
+  <ul>
+    <li>Test Study: 2 videos (~2 minutes) - Use this first to ensure everything works correctly</li>
+    <li>Full Study: 50 videos (~50-60 minutes) - After testing, use this for the actual study</li>
+  </ul>
+  <p><strong>Instructions:</strong></p>
+  <ol>
+    <li>First, click "Start Test Study" to verify everything works and familiarize yourself with the interface</li>
+    <li>Download and check the test CSV file to ensure it saves correctly</li>
+    <li>Then return here and click "Start Full Study" for the complete evaluation</li>
+    <li>When finished, please email your CSV file to dkjj20@bath.ac.uk</li>
+  </ol>
+  <p><strong style="color: #dc3545;"> Warning: Do not press back or close the window during the study as you will lose all progress!</strong></p>
+
+  <div class="button-container">
+    <button id="testButton">Start Test Study (2 Videos)</button>
+    <button id="fullButton">Start Full Study (50 Videos)</button>
+  </div>
+
+  <!-- Container for the content -->
+  <div id="content"></div>
+
+  <!-- JavaScript Code -->
+  <script>
+    // Global variables
+    var data = [];
+    var currentIndex = 0;
+    var responses = [];
+
+    // Function to parse CSV data
+    function parseCSV(csvData) {
+      var lines = csvData.split("\n").filter(line => line.trim() !== '');
+      var result = [];
+      var headers = lines[0].split(",").map(h => h.trim());
+      for (var i = 1; i < lines.length; i++) {
+        var obj = {};
+        var currentline = lines[i].split(",").map(c => c.trim());
+        for (var j = 0; j < headers.length; j++) {
+          obj[headers[j]] = currentline[j] ? currentline[j].replace(/^"|"$/g, '') : "";
+        }
+        if (Object.keys(obj).length > 0) {
+          result.push(obj);
+        }
+      }
+      return result;
+    }
+
+    // Function to initialize the first entry
+    function initializePage() {
+      displayEntry(currentIndex);
+    }
+
+    // Function to display an entry
+    function displayEntry(index) {
+      var contentDiv = document.getElementById('content');
+      var entry = data[index];
+      var totalVideos = data.length;
+
+      // Create HTML content
+      var htmlContent = '';
+
+      // Add progress indicator
+      htmlContent += `<div class="progress-indicator">
+          Video ${index + 1} of ${totalVideos}
+      </div>`;
+
+      // Text Prompt
+      htmlContent += '<h2>Text Prompt:</h2>';
+      htmlContent += '<p><em>' + entry.text_prompt + '</em></p>';
+
+      // GIFs Section
+      htmlContent += '<h3>GIFs:</h3>';
+      htmlContent += '<div class="video-container">';
+      // GIF A
+      htmlContent += '<div class="video-box">';
+      htmlContent += '<h4>GIF A</h4>';
+      htmlContent += '<img src="' + entry.video_url_1 + '" alt="GIF A">';
+      htmlContent += '</div>';
+      // GIF B
+      htmlContent += '<div class="video-box">';
+      htmlContent += '<h4>GIF B</h4>';
+      htmlContent += '<img src="' + entry.video_url_2 + '" alt="GIF B">';
+      htmlContent += '</div>';
+      // GIF C
+      htmlContent += '<div class="video-box">';
+      htmlContent += '<h4>GIF C</h4>';
+      htmlContent += '<img src="' + entry.video_url_3 + '" alt="GIF C">';
+      htmlContent += '</div>';
+      // GIF D
+      htmlContent += '<div class="video-box">';
+      htmlContent += '<h4>GIF D</h4>';
+      htmlContent += '<img src="' + entry.video_url_4 + '" alt="GIF D">';
+      htmlContent += '</div>';
+      htmlContent += '</div>';
+
+      // Evaluation Instructions
+      htmlContent += '<h3>Evaluation:</h3>';
+      htmlContent += '<div class="instructions">';
+      htmlContent += '<p>Rank the GIFs from best to worst using letters A, B, C, and D. Enter your rankings in the format <strong>A,B,C,D</strong> without spaces.</p>';
+      htmlContent += '</div>';
+
+      // Evaluation Form
+      htmlContent += '<form id="evaluationForm">';
+      // Smoothness
+      htmlContent += '<p><strong>1. Rank the GIFs by Smoothness:</strong></p>';
+      htmlContent += '<p>Which GIFs play the smoothest, without any jumps or awkward transitions? Rank them from best to worst.</p>';
+      htmlContent += '<input type="text" name="smoothness_ranking" pattern="[A-D](,[A-D]){3}" required placeholder="e.g., A,B,C,D" />';
+      // Picture Quality
+      htmlContent += '<p><strong>2. Rank the GIFs by Picture Quality:</strong></p>';
+      htmlContent += '<p>Which GIFs look the clearest and have the best picture quality? Rank them from best to worst.</p>';
+      htmlContent += '<input type="text" name="picture_quality_ranking" pattern="[A-D](,[A-D]){3}" required placeholder="e.g., A,B,C,D" />';
+      // Accuracy to Description
+      htmlContent += '<p><strong>3. Rank the GIFs by Accuracy to Description:</strong></p>';
+      htmlContent += '<p>Which GIFs best match the description above? Rank them based on how well they fit whats described in the text.</p>';
+      htmlContent += '<input type="text" name="accuracy_ranking" pattern="[A-D](,[A-D]){3}" required placeholder="e.g., A,B,C,D" />';
+      // Final Overall Ranking
+      htmlContent += '<p><strong>4. Provide an Overall Ranking:</strong></p>';
+      htmlContent += '<p>Considering everything (smoothness, picture quality, and accuracy), rank the GIFs overall from best to worst.</p>';
+      htmlContent += '<input type="text" name="overall_ranking" pattern="[A-D](,[A-D]){3}" required placeholder="e.g., A,B,C,D" />';
+      // Navigation Buttons
+      htmlContent += '<div>';
+      if (currentIndex < data.length - 1) {
+        htmlContent += '<input type="button" value="Next" onclick="nextEntry()" />';
+      } else {
+        htmlContent += '<input type="button" value="Finish" onclick="finishSurvey()" />';
+      }
+      htmlContent += '</div>';
+      htmlContent += '</form>';
+
+      // Short Instructions
+      htmlContent += '<div class="instructions">';
+      htmlContent += '<h4>Short Instructions:</h4>';
+      htmlContent += '<p>Compare and rank GIFs based on how smooth, clear, and accurate they are.</p>';
+      htmlContent += '</div>';
+
+      // Full Instructions
+      htmlContent += '<div class="instructions">';
+      htmlContent += '<h4>Full Instructions:</h4>';
+      htmlContent += '<p>For each question, rank the GIFs from best to worst using the letters A, B, C, and D. Enter your rankings in the provided input boxes, formatted as <strong>A,B,C,D</strong>, with no spaces.</p>';
+      htmlContent += '<p>In the last question, give an overall ranking of the GIFs based on all factors (smoothness, picture quality, and accuracy).</p>';
+      htmlContent += '<p><strong>Note:</strong> Responses must be formatted correctly; otherwise, they will not be accepted.</p>';
+      htmlContent += '</div>';
+
+      contentDiv.innerHTML = htmlContent;
+      contentDiv.style.display = 'block';
+    }
+
+    // Function to handle next entry
+    function nextEntry() {
+      var form = document.getElementById('evaluationForm');
+      if (!validateForm(form)) {
+        return;
+      }
+      saveResponses(form);
+      currentIndex++;
+      displayEntry(currentIndex);
+    }
+
+    // Function to finish the survey
+    function finishSurvey() {
+      console.log('Finish survey initiated');
+      var form = document.getElementById('evaluationForm');
+      if (!validateForm(form)) {
+        console.log('Form validation failed');
+        return;
+      }
+      saveResponses(form);
+      console.log('Responses saved:', responses);
+      // Save all responses to CSV
+      downloadResponses();
+      // Reset the survey and show thank you message with return button
+      currentIndex = 0;
+      responses = [];
+      document.getElementById('content').innerHTML = `
+          <h2>Thank you for completing the survey!</h2>
+          <div class="button-container">
+              <button onclick="location.reload()">Return Home</button>
+          </div>
+      `;
+    }
+
+    // Function to validate form inputs
+    function validateForm(form) {
+      var inputs = form.querySelectorAll('input[type="text"]');
+      var isValid = true;
+      var pattern = /^[A-D](,[A-D]){3}$/i;
+      inputs.forEach(function(input) {
+        var value = input.value.toUpperCase();
+        if (!pattern.test(value)) {
+          isValid = false;
+        } else {
+          var rankings = value.split(',');
+          var uniqueRankings = new Set(rankings);
+          if (uniqueRankings.size !== 4) {
+            isValid = false;
+          }
+        }
+      });
+      if (!isValid) {
+        alert('Please ensure all rankings are formatted correctly and contain each of A, B, C, D once.');
+      }
+      return isValid;
+    }
+
+    // Function to save responses for the current entry
+    function saveResponses(form) {
+      var inputs = form.querySelectorAll('input[type="text"]');
+      var entryResponses = {};
+      inputs.forEach(function(input) {
+        entryResponses[input.name] = input.value.toUpperCase();
+      });
+      entryResponses['entry_index'] = currentIndex + 1;
+      entryResponses['text_prompt'] = data[currentIndex].text_prompt;
+      responses.push(entryResponses);
+    }
+
+    // Function to download all responses as CSV
+    function downloadResponses() {
+      if (responses.length === 0) {
+        alert('No responses to save.');
+        return;
+      }
+      
+      try {
+        // Sanitize and escape values properly
+        var csvContent = "data:text/csv;charset=utf-8,";
+        var headers = Object.keys(responses[0]).join(",") + "\n";
+        csvContent += headers;
+        
+        responses.forEach(function(response) {
+          var row = Object.values(response).map(value => {
+            // Properly escape values containing commas or quotes
+            if (typeof value === 'string' && (value.includes(',') || value.includes('"'))) {
+              return `"${value.replace(/"/g, '""')}"`;
+            }
+            return value;
+          }).join(",");
+          csvContent += row + "\n";
+        });
+
+        // Create download link using encoded URI
+        var encodedUri = encodeURI(csvContent);
+        var link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        var timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+        link.setAttribute("download", "responses_" + timestamp + ".csv");
+        
+        // Trigger download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        alert('Thank you for your submission! Your responses have been saved as a CSV file.');
+        console.log('CSV file downloaded successfully');
+      } catch (error) {
+        console.error('Error during CSV file download:', error);
+        alert('An error occurred while saving your responses. Please try again or contact support.');
+      }
+    }
+
+    // Replace the single button event listener with two listeners
+    document.getElementById('testButton').addEventListener('click', function() {
+        startStudy('https://video-evaluation-study.s3.eu-north-1.amazonaws.com/data_small.csv');
+    });
+
+    document.getElementById('fullButton').addEventListener('click', function() {
+        startStudy('https://video-evaluation-study.s3.eu-north-1.amazonaws.com/data.csv');
+    });
+
+    // Function to start the study
+    function startStudy(csvUrl) {
+        // Show loading state
+        document.getElementById('testButton').disabled = true;
+        document.getElementById('fullButton').disabled = true;
+        document.querySelector('.button-container').style.display = 'none';
+
+        // Hide the initial instructions
+        document.querySelector('h2').style.display = 'none';
+        document.querySelectorAll('p, ul, ol').forEach(element => {
+            element.style.display = 'none';
+        });
+
+        // Show loading message
+        document.querySelector('.button-container').innerHTML = '<p>Loading...</p>';
+
+        // Fetch CSV from S3
+        fetch(csvUrl, {
+            method: 'GET',
+            mode: 'cors',
+            credentials: 'omit',
+            headers: {
+                'Accept': 'text/csv,text/plain,*/*'
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(csvData => {
+            if (!csvData || csvData.trim() === '') {
+                throw new Error('Received empty CSV data');
+            }
+            
+            console.log('CSV data received:', csvData.substring(0, 100) + '...'); 
+            data = parseCSV(csvData);
+            
+            if (data.length === 0) {
+                throw new Error('No valid data entries found in CSV');
+            }
+            
+            console.log('Parsed data:', data.slice(0, 2));
+            document.querySelector('.button-container').style.display = 'none';
+            document.querySelector('h2').style.display = 'none';
+            document.querySelector('p').style.display = 'none';
+            initializePage();
+        })
+        .catch(error => {
+            console.error('Error details:', {
+                message: error.message,
+                name: error.name,
+                stack: error.stack
+            });
+            // Reset button state and show instructions again
+            document.getElementById('testButton').disabled = false;
+            document.getElementById('fullButton').disabled = false;
+            document.querySelector('.button-container').style.display = 'flex';
+            document.querySelector('h2').style.display = 'block';
+            document.querySelectorAll('p, ul, ol').forEach(element => {
+                element.style.display = 'block';
+            });
+            // Show user-friendly error
+            alert(`Failed to load study data. Please try again or contact support.\nError: ${error.message}`);
+        });
+    }
+  </script>
+</body>
+</html>

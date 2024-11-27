@@ -1,0 +1,127 @@
+{
+    "A red apple on a wooden table.": {
+      "after": "A green apple on a wooden table.",
+      "type": "Color Variation",
+      "group": "Subtle Changes"
+    },
+    "A woman reading a book by the fireplace.": {
+      "after": "A woman wearing glasses reading a book by the fireplace.",
+      "type": "Accessory Addition",
+      "group": "Subtle Changes"
+    },
+    "A cup of black coffee on a saucer.": {
+      "after": "A cup of black coffee with a silver spoon on a saucer.",
+      "type": "Minor Object Inclusion",
+      "group": "Subtle Changes"
+    },
+    "A portrait of a man smiling warmly.": {
+      "after": "A portrait of a man with a contemplative gaze.",
+      "type": "Expression Shift",
+      "group": "Subtle Changes"
+    },
+    "A street lined with cherry blossoms on a sunny day.": {
+      "after": "A street lined with cherry blossoms on a cloudy day.",
+      "type": "Weather Change",
+      "group": "Subtle Changes"
+    },
+    "An interior of a room lit by daylight through the windows.": {
+      "after": "The same room illuminated by soft evening lamps.",
+      "type": "Lighting Adjustment",
+      "group": "Subtle Changes"
+    },
+    "A landscape of rolling hills.": {
+      "after": "A landscape of rolling hills dotted with grazing sheep.",
+      "type": "Detail Enhancement",
+      "group": "Subtle Changes"
+    },
+    "A businessman standing in an office.": {
+      "after": "A businessman wearing a red tie standing in an office.",
+      "type": "Attire Modification",
+      "group": "Subtle Changes"
+    },
+    "A park with trees in full bloom.": {
+      "after": "A park with trees shedding leaves.",
+      "type": "Seasonal Element",
+      "group": "Subtle Changes"
+    },
+    "A candle burning brightly.": {
+      "after": "A candle burned down to a stub.",
+      "type": "Time Progression",
+      "group": "Subtle Changes"
+    },
+    "A desert landscape with sand dunes.": {
+      "after": "An oasis in the desert with palm trees and a pond.",
+      "type": "Scene Transformation",
+      "group": "Significant Changes"
+    },
+    "A horse running through a field.": {
+      "after": "A unicorn running through a field.",
+      "type": "Subject Replacement",
+      "group": "Significant Changes"
+    },
+    "A portrait of a woman against a plain background.": {
+      "after": "A portrait of a woman against a city skyline at night.",
+      "type": "Background Swap",
+      "group": "Significant Changes"
+    },
+    "A mountain under a clear blue sky.": {
+      "after": "A mountain during a thunderstorm with lightning.",
+      "type": "Weather Shift",
+      "group": "Significant Changes"
+    },
+    "A beach at sunrise.": {
+      "after": "The same beach at sunset.",
+      "type": "Time of Day Change",
+      "group": "Significant Changes"
+    },
+    "A forest in summer.": {
+      "after": "The same forest covered in snow.",
+      "type": "Seasonal Shift",
+      "group": "Significant Changes"
+    },
+    "Children playing soccer in a field.": {
+      "after": "Children flying kites in the same field.",
+      "type": "Activity Alteration",
+      "group": "Significant Changes"
+    },
+    "A flock of birds flying over a lake.": {
+      "after": "A flock of butterflies flying over a lake.",
+      "type": "Animal Change",
+      "group": "Significant Changes"
+    },
+    "An old brick building on a street corner.": {
+      "after": "A modern glass building on the same street corner.",
+      "type": "Architectural Change",
+      "group": "Significant Changes"
+    },
+    "A calm sea under the moonlight.": {
+      "after": "A ship sailing on a calm sea under the moonlight.",
+      "type": "Element Addition",
+      "group": "Significant Changes"
+    },
+    "A lion resting in the savannah.": {
+      "after": "A lion with wings resting in the savannah.",
+      "type": "Combining Elements",
+      "group": "Complex Transformations"
+    },
+    "A landscape painted in realistic style.": {
+      "after": "The same landscape painted in impressionist style.",
+      "type": "Art Style Change",
+      "group": "Complex Transformations"
+    },
+    "A city street in modern times.": {
+      "after": "The same street in the 1920s with vintage cars.",
+      "type": "Historical Shift",
+      "group": "Complex Transformations"
+    },
+    "A castle on a hill.": {
+      "after": "A castle on a hill with dragons flying overhead.",
+      "type": "Fantasy Addition",
+      "group": "Complex Transformations"
+    },
+    "A girl sitting alone on a bench.": {
+      "after": "A girl sitting on a bench feeding pigeons.",
+      "type": "Subject Interaction",
+      "group": "Complex Transformations"
+    }
+  }

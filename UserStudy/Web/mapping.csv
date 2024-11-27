@@ -1,0 +1,51 @@
+text_prompt,model_url_1,model_url_2,model_url_3,model_url_4
+A flower blooming from a bud to full bloom over time.,EIDTV,T2VZero,FreeBloom,DirecT2V
+A cat chasing a laser pointer dot across the room.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A rotating 3D cube changing colors.,EIDTV,DirecT2V,T2VZero,FreeBloom
+A sunrise over the mountains turning into daytime.,T2VZero,EIDTV,FreeBloom,DirecT2V
+A person morphing into a wolf under a full moon.,EIDTV,T2VZero,DirecT2V,FreeBloom
+Raindrops falling into a puddle creating ripples.,EIDTV,T2VZero,DirecT2V,FreeBloom
+A city skyline transitioning from day to night with lights turning on.,EIDTV,T2VZero,DirecT2V,FreeBloom
+An apple falling from a tree and bouncing on the ground.,T2VZero,FreeBloom,EIDTV,DirecT2V
+A hand drawing a circle on a whiteboard.,EIDTV,FreeBloom,DirecT2V,T2VZero
+An ice cube melting into water.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A rocket launching into space and disappearing into the stars.,T2VZero,EIDTV,FreeBloom,DirecT2V
+A chameleon changing colors on a branch.,EIDTV,DirecT2V,T2VZero,FreeBloom
+A balloon inflating and then popping.,FreeBloom,EIDTV,T2VZero,DirecT2V
+A paper airplane flying across a classroom.,DirecT2V,FreeBloom,EIDTV,T2VZero
+Clouds forming and then dissipating in the sky.,T2VZero,FreeBloom,DirecT2V,EIDTV
+A cup of coffee being poured with steam rising.,DirecT2V,T2VZero,EIDTV,FreeBloom
+A clock's hands moving fast-forward from noon to midnight.,EIDTV,DirecT2V,FreeBloom,T2VZero
+A caterpillar transforming into a butterfly.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A book opening and pages flipping.,T2VZero,EIDTV,DirecT2V,FreeBloom
+A snowman melting under the sun.,DirecT2V,T2VZero,FreeBloom,EIDTV
+A traffic light cycling from red to green.,FreeBloom,DirecT2V,EIDTV,T2VZero
+A fish jumping out of water and diving back in.,DirecT2V,T2VZero,EIDTV,FreeBloom
+An artist painting a canvas with a brush.,FreeBloom,DirecT2V,T2VZero,EIDTV
+A spinning globe showing continents passing by.,T2VZero,EIDTV,FreeBloom,DirecT2V
+Leaves falling from a tree in autumn.,DirecT2V,T2VZero,EIDTV,FreeBloom
+A car transforming into a robot.,DirecT2V,EIDTV,FreeBloom,T2VZero
+A candle burning down with the flame flickering.,DirecT2V,FreeBloom,T2VZero,EIDTV
+A soccer ball being kicked into a goal.,FreeBloom,EIDTV,DirecT2V,T2VZero
+A river flowing through a forest.,T2VZero,FreeBloom,EIDTV,DirecT2V
+A rainbow appearing after rain.,DirecT2V,T2VZero,FreeBloom,EIDTV
+An eclipse where the moon passes in front of the sun.,DirecT2V,T2VZero,FreeBloom,EIDTV
+A horse galloping across a field.,DirecT2V,T2VZero,EIDTV,FreeBloom
+Popcorn popping in a microwave.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A kaleidoscope pattern changing shapes and colors.,DirecT2V,T2VZero,EIDTV,FreeBloom
+A glass shattering into pieces when dropped.,EIDTV,FreeBloom,T2VZero,DirecT2V
+An astronaut floating in space waving.,EIDTV,DirecT2V,T2VZero,FreeBloom
+A plant growing from a seed to a sapling.,EIDTV,FreeBloom,DirecT2V,T2VZero
+Fireworks exploding in the night sky.,DirecT2V,FreeBloom,EIDTV,T2VZero
+A dog wagging its tail happily.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A compass needle spinning and settling north.,EIDTV,FreeBloom,T2VZero,DirecT2V
+An umbrella opening up during rainfall.,EIDTV,FreeBloom,DirecT2V,T2VZero
+A stop-motion animation of clay figures moving.,DirecT2V,FreeBloom,EIDTV,T2VZero
+A battery draining from full to empty.,DirecT2V,FreeBloom,EIDTV,T2VZero
+A puzzle being assembled piece by piece.,T2VZero,FreeBloom,EIDTV,DirecT2V
+A windmill's blades turning in the breeze.,EIDTV,DirecT2V,FreeBloom,T2VZero
+A snake slithering through the grass.,EIDTV,DirecT2V,FreeBloom,T2VZero
+A paintbrush changing colors as it moves.,EIDTV,DirecT2V,FreeBloom,T2VZero
+A volcano erupting with lava flowing.,EIDTV,FreeBloom,T2VZero,DirecT2V
+An eye blinking slowly.,EIDTV,T2VZero,FreeBloom,DirecT2V
+A paper crumpling into a ball.,T2VZero,FreeBloom,DirecT2V,EIDTV

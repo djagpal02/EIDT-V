@@ -1,0 +1,234 @@
+{
+    "Flower Blooming": {
+      "fixed part": "Scene: Close-up of pink rosebud with dewdrops among green leaves. Setting: Morning sunlight softly illuminates the bud; crisp air. Background: Soft focus of other flowers; occasional butterflies flitting.",
+      "dynamic part": [
+        "Bud slightly swells.",
+        "Bud begins to open.",
+        "First petal peeks out.",
+        "Petals unfurl slowly.",
+        "More petals emerge.",
+        "Flower opens halfway.",
+        "Petals continue unfolding.",
+        "Flower nearly open.",
+        "Final petals spread out.",
+        "Flower fully blooms.",
+        "Dewdrops glisten on petals.",
+        "Bee approaches flower.",
+        "Bee lands on flower.",
+        "Bee collects nectar.",
+        "Bee flies away."
+      ]
+    },
+    "Juggler Performing in Park": {
+      "fixed part": "Scene: Lively park with performer juggling bright balls. Character: Young man in colorful vest, striped pants, tall hat. Setting: Midday under blue sky; crowd watches and claps. Background: Trees, benches, fountain; families picnicking.",
+      "dynamic part": [
+        "Juggler tosses one ball.",
+        "Ball reaches peak height.",
+        "Second ball thrown.",
+        "First ball descends.",
+        "Third ball added.",
+        "Balls form a circle.",
+        "Juggler smiles.",
+        "Crowd claps.",
+        "Juggler adds fourth ball.",
+        "Balls move faster.",
+        "Juggler spins around.",
+        "Balls keep moving.",
+        "Juggler adds fifth ball.",
+        "One ball drops.",
+        "Juggler catches it swiftly.",
+        "Continues juggling.",
+        "Juggler bows.",
+        "Crowd cheers.",
+        "Juggler catches all balls.",
+        "Performance ends."
+      ]
+    },
+    "Bird Taking Flight": {
+      "fixed part": "Scene: Sparrow perched on mossy branch high in forest. Species: Small brown sparrow with bright eyes. Setting: Dawn light filters through leaves; crisp morning air. Background: Surrounding branches; soft forest sounds.",
+      "dynamic part": [
+        "Bird looks around.",
+        "Bird flaps wings slightly.",
+        "Bird crouches down.",
+        "Bird pushes off branch.",
+        "Wings spread wide.",
+        "Bird ascends upward.",
+        "Leaves rustle.",
+        "Bird flies forward.",
+        "Bird gains altitude.",
+        "Bird soars over trees.",
+        "Bird disappears into sky.",
+        "Branch sways gently."
+      ]
+    },
+    "Car Driving on Highway": {
+      "fixed part": "Scene: Red sports car driving on open highway. Setting: Sunny day; clear blue sky; sharp shadows. Background: Rolling hills, distant mountains; fields beside road; occasional vehicles.",
+      "dynamic part": [
+        "Car starts engine.",
+        "Car begins moving.",
+        "Car accelerates.",
+        "Trees blur past.",
+        "Sunlight reflects on hood.",
+        "Car changes lanes.",
+        "Passes a truck.",
+        "Road curves slightly.",
+        "Mountains appear larger.",
+        "Clouds drift in sky.",
+        "Car turns on radio.",
+        "Driver taps steering wheel.",
+        "Car overtakes another vehicle.",
+        "Speed limit sign passes.",
+        "Car maintains speed.",
+        "Birds fly overhead.",
+        "Car approaches bridge.",
+        "Bridge spans river.",
+        "Car crosses bridge.",
+        "River glistens below.",
+        "Car continues on road.",
+        "Mountains loom ahead.",
+        "Car enters tunnel.",
+        "Lights flicker in tunnel.",
+        "Car exits tunnel."
+      ]
+    },
+    "Artist Painting in Studio": {
+      "fixed part": "Scene: Artist's studio with canvases and paints. Character: Woman in apron, glasses; holding palette and brush. Setting: Afternoon light through windows; quiet atmosphere. Background: Artwork on walls; shelves with supplies; cat on windowsill.",
+      "dynamic part": [
+        "Artist dips brush in paint.",
+        "Applies stroke to canvas.",
+        "Steps back to observe.",
+        "Mixes new color.",
+        "Adds detail to painting.",
+        "Wipes brush clean.",
+        "Changes brush size.",
+        "Paints larger area.",
+        "Focuses intently.",
+        "Adjusts easel angle.",
+        "Sips coffee.",
+        "Continues painting.",
+        "Adds highlights.",
+        "Smiles at progress.",
+        "Signs name on canvas.",
+        "Hangs painting on wall.",
+        "Stands back to admire.",
+        "Studio cat walks by."
+      ]
+    },
+    "Cat Playing with Yarn": {
+      "fixed part": "Scene: Cozy living room with fireplace; grey kitten on rug. Character: Kitten with green eyes; red yarn ball nearby. Setting: Soft light from fireplace; comfortable furniture. Background: Clock on mantel, family photos; homely feel.",
+      "dynamic part": [
+        "Cat notices yarn ball.",
+        "Paw reaches out.",
+        "Touches yarn gently.",
+        "Yarn rolls slightly.",
+        "Cat pounces on yarn.",
+        "Yarn unravels a bit.",
+        "Cat bats yarn around.",
+        "Yarn wraps around paw.",
+        "Cat tries to free paw.",
+        "Cat tumbles playfully."
+      ]
+    },
+    "Sunrise Over Mountains": {
+      "fixed part": "Scene: Mountain silhouette against sky; snow-capped peaks. Setting: Night transitions to dawn; stars fade; colors shift. Background: Wispy clouds; horizon glows; tranquil landscape. Environment: Crisp air; distant wind sounds; nature awakens.",
+      "dynamic part": [
+        "Sky dark with stars.",
+        "First hint of light.",
+        "Horizon glows faintly.",
+        "Colors shift to purple.",
+        "Stars begin to fade.",
+        "Sky turns deep blue.",
+        "Orange hues appear.",
+        "Mountain silhouette sharpens.",
+        "Light intensifies.",
+        "Clouds catch light.",
+        "Sky becomes lighter.",
+        "Sun's edge appears.",
+        "Sun rises slowly.",
+        "Sky brightens more.",
+        "Sun halfway above horizon.",
+        "Rays spread outward.",
+        "Clouds glow golden.",
+        "Mountains visible.",
+        "Birds fly across sky.",
+        "Sun fully risen."
+      ]
+    },
+    "Child Blowing Bubbles": {
+      "fixed part": "Scene: Garden with flowers; young girl holds bubble wand. Character: Smiling girl, age 6, in yellow dress, pigtails. Setting: Sunny afternoon; bright light; butterflies among flowers. Background: White fence; birds singing; small fountain nearby.",
+      "dynamic part": [
+        "Child dips wand in solution.",
+        "Lifts wand up.",
+        "Blows gently.",
+        "Small bubble forms.",
+        "Bubble grows larger.",
+        "Bubble detaches from wand.",
+        "Bubble floats upward.",
+        "Rainbow colors on bubble.",
+        "Child watches bubble.",
+        "Bubble rises higher.",
+        "Bubble catches sunlight.",
+        "Bubble pops.",
+        "Child laughs.",
+        "Prepares to blow another.",
+        "Bird chirps nearby."
+      ]
+    },
+    "Train Passing Through Countryside": {
+      "fixed part": "Scene: Train tracks through fields; golden crops on sides. Setting: Overcast day; grey clouds; soft light over fields. Background: Distant hills, farmhouses; occasional trees; rustling crops. Environment: Quiet; distant train sound approaching.",
+      "dynamic part": [
+        "Tracks empty.",
+        "Train horn sounds.",
+        "Train appears in distance.",
+        "Train approaches slowly.",
+        "Engine comes into view.",
+        "Train moves closer.",
+        "Wind picks up.",
+        "Train passes by.",
+        "Carriages blur past.",
+        "Wheels clatter on tracks.",
+        "Graffiti visible.",
+        "Train speeds past.",
+        "Last carriage passes.",
+        "Train recedes.",
+        "Sound fades away.",
+        "Leaves settle.",
+        "Silence returns.",
+        "Bird lands on track.",
+        "Clouds shift overhead.",
+        "Scene quiet again."
+      ]
+    },
+    "Surfer Riding a Wave": {
+      "fixed part": "Scene: Ocean with waves; surfer paddles on surfboard. Character: Male surfer in black wetsuit; blond hair; focused. Setting: Sunny day; blue sky; water sparkles. Background: Distant beach with palm trees; other surfers; seagulls.",
+      "dynamic part": [
+        "Surfer paddles out.",
+        "Spots incoming wave.",
+        "Turns board around.",
+        "Paddles hard.",
+        "Wave lifts surfer.",
+        "Surfer stands up.",
+        "Balances on board.",
+        "Rides wave face.",
+        "Spray flies off wave.",
+        "Performs turn.",
+        "Rides to shore.",
+        "Jumps off board."
+      ]
+    },
+    "Kayaking on River": {
+      "fixed part": "Scene: Calm river with clear water; red kayak. Character: Person wearing blue helmet and yellow life vest. Setting: Sunny day, blue sky, green forest on riverbank.",
+      "dynamic part": [
+        "Kayaker dips paddle into water.",
+        "Kayaker paddles forward; small ripples form.",
+        "Kayaker switches paddle to left side.",
+        "Kayaker gazes ahead toward horizon.",
+        "Kayaker adjusts blue helmet strap.",
+        "Sunlight shines on kayaker's smiling face.",
+        "Kayaker accelerates; water splashes.",
+        "Kayaker passes by overhanging trees.",
+        "Kayaker waves right hand.",
+        "Kayaker continues down the river."
+      ]
+    }
+  }

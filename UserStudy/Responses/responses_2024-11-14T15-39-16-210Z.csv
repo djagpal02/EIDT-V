@@ -1,0 +1,51 @@
+smoothness_ranking,picture_quality_ranking,accuracy_ranking,overall_ranking,entry_index,text_prompt
+"A,B,C,D","A,C,D,B","A,D,C,B","A,C,B,D",1,A flower blooming from a bud to full bloom over time.
+"A,D,B,C","D,A,B,C","B,C,D,A","D,A,B,C",2,A cat chasing a laser pointer dot across the room.
+"D,C,A,B","A,B,C,D","A,D,B,C","C,A,D,B",3,A rotating 3D cube changing colors.
+"B,A,D,C","B,A,D,C","B,D,A,C","C,B,A,D",4,A sunrise over the mountains turning into daytime.
+"A,C,D,B","D,A,B,C","D,A,C,B","B,A,D,C",5,A person morphing into a wolf under a full moon.
+"A,D,B,C","D,A,B,C","B,D,A,C","A,B,D,C",6,Raindrops falling into a puddle creating ripples.
+"A,D,C,B","A,D,C,B","A,B,C,D","A,B,D,C",7,A city skyline transitioning from day to night with lights turning on.
+"A,C,B,D","B,A,C,D","B,C,A,D","B,C,D,A",8,An apple falling from a tree and bouncing on the ground.
+"A,D,B,C","B,A,C,D","A,B,D,C","B,A,D,C",9,A hand drawing a circle on a whiteboard.
+"A,C,B,D","D,A,C,B","D,C,A,B","A,D,B,C",10,An ice cube melting into water.
+"B,A,C,D","B,A,C,D","C,D,B,A","B,C,A,D",11,A rocket launching into space and disappearing into the stars.
+"A,D,C,B","A,B,D,C","D,A,B,C","A,C,D,B",12,A chameleon changing colors on a branch.
+"C,B,D,A","B,D,C,A","A,B,C,D","A,B,C,D",13,A balloon inflating and then popping.
+"B,C,D,A","B,C,A,D","D,C,B,A","C,D,B,A",14,A paper airplane flying across a classroom.
+"A,D,B,C","D,A,B,C","D,B,C,A","D,B,A,C",15,Clouds forming and then dissipating in the sky.
+"C,A,B,D","C,B,D,A","D,C,B,A","C,D,B,A",16,A cup of coffee being poured with steam rising.
+"C,B,A,D","A,D,C,B","C,A,D,B","D,A,C,B",17,A clock's hands moving fast-forward from noon to midnight.
+"A,B,C,D","B,A,D,C","A,B,C,D","A,B,D,C",18,A caterpillar transforming into a butterfly.
+"A,B,D,C","D,B,A,C","D,B,A,C","B,C,D,A",19,A book opening and pages flipping.
+"D,A,C,B","C,D,B,A","B,C,D,A","D,B,C,A",20,A snowman melting under the sun.
+"B,A,D,C","C,D,A,B","C,A,D,B","C,D,A,B",21,A traffic light cycling from red to green.
+"C,B,D,A","D,A,B,C","D,C,B,A","C,D,B,A",22,A fish jumping out of water and diving back in.
+"C,D,A,B","D,B,C,A","D,A,C,B","C,D,A,B",23,An artist painting a canvas with a brush.
+"B,C,A,D","B,A,C,D","C,B,D,A","A,B,C,D",24,A spinning globe showing continents passing by.
+"B,A,D,C","D,A,B,C","C,B,D,A","D,B,A,C",25,Leaves falling from a tree in autumn.
+"B,D,C,A","B,D,C,A","C,D,A,B","C,D,B,A",26,A car transforming into a robot.
+"D,A,B,C","D,C,B,A","D,B,C,A","D,B,C,A",27,A candle burning down with the flame flickering.
+"B,A,D,C","B,A,D,C","B,A,C,D","B,C,A,D",28,A soccer ball being kicked into a goal.
+"C,A,B,D","B,C,A,D","B,A,C,D","C,D,A,B",29,A river flowing through a forest.
+"A,D,C,B","D,C,A,B","C,D,B,A","C,D,B,A",30,A rainbow appearing after rain.
+"A,D,B,C","C,D,B,A","D,A,C,B","C,B,D,A",31,An eclipse where the moon passes in front of the sun.
+"C,B,A,D","D,C,A,B","C,D,B,A","B,C,D,A",32,A horse galloping across a field.
+"D,B,A,C","D,A,B,C","D,B,A,C","B,A,D,C",33,Popcorn popping in a microwave.
+"B,C,D,A","C,B,D,A","C,B,A,D","B,C,D,A",34,A kaleidoscope pattern changing shapes and colors.
+"A,C,B,D","B,A,C,D","C,A,D,B","A,C,B,D",35,A glass shattering into pieces when dropped.
+"B,A,D,C","A,D,B,C","A,D,C,B","D,A,B,C",36,An astronaut floating in space waving.
+"B,D,A,C","B,D,A,C","B,D,A,C","C,A,D,B",37,A plant growing from a seed to a sapling.
+"B,C,D,A","C,D,B,A","D,B,C,A","C,D,B,A",38,Fireworks exploding in the night sky.
+"B,A,D,C","D,A,B,C","D,B,A,C","D,A,B,C",39,A dog wagging its tail happily.
+"B,A,C,D","C,A,B,D","B,A,D,C","B,A,C,D",40,A compass needle spinning and settling north.
+"C,B,A,D","D,A,B,C","A,B,C,D","A,D,B,C",41,An umbrella opening up during rainfall.
+"B,C,D,A","C,D,B,A","B,C,A,D","B,C,D,A",42,A stop-motion animation of clay figures moving.
+"B,D,C,A","C,D,B,A","B,D,C,A","C,B,D,A",43,A battery draining from full to empty.
+"C,B,A,D","B,A,C,D","A,B,D,C","A,B,C,D",44,A puzzle being assembled piece by piece.
+"D,A,C,B","A,C,D,B","D,C,A,B","B,A,C,D",45,A windmill's blades turning in the breeze.
+"A,D,C,B","C,B,A,D","A,C,D,B","A,D,C,B",46,A snake slithering through the grass.
+"A,D,C,B","A,C,D,B","A,B,C,D","C,B,A,D",47,A paintbrush changing colors as it moves.
+"D,A,B,C","A,B,C,D","D,B,A,C","D,A,B,C",48,A volcano erupting with lava flowing.
+"A,B,D,C","B,A,C,D","A,B,C,D","A,B,C,D",49,An eye blinking slowly.
+"C,D,B,A","D,A,B,C","A,D,B,C","B,D,A,C",50,A paper crumpling into a ball.
