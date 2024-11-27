@@ -5,6 +5,13 @@
 This repository provides a implementation of **EIDT-V**, leveraging diffusion models and advanced methodologies for zero-shot text-to-video generation.
 
 ---
+
+![GIF 1](./_Assets_/gif1.gif)
+![GIF 2](./_Assets_/gif2.gif)
+![GIF 3](./_Assets_/gif3.gif)
+
+---
+
 ## Usage
 
 ### Prerequisites
