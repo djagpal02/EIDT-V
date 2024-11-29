@@ -27,5 +27,3 @@ build/
 .env
 *.env
 
-# Specific file to ignore
-code/Llama/login.py

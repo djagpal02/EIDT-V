@@ -6,9 +6,16 @@ This repository provides a implementation of **EIDT-V**, leveraging diffusion mo
 
 ---
 
-![GIF 1](./_Assets_/gif1.gif)
-![GIF 2](./_Assets_/gif2.gif)
-![GIF 3](./_Assets_/gif3.gif)
+<div align="center">
+<table>
+<tr>
+  <td align="center"><img src="./_Assets_/gif1.gif" width="200" alt="Result 1"/><br><em>"A butterfly gently flapping its wings while resting on a flower"</em></td>
+  <td align="center"><img src="./_Assets_/gif2.gif" width="200" alt="Result 2"/><br><em>"A child blowing bubbles that float and pop gently"</em></td>
+  <td align="center"><img src="./_Assets_/gif3.gif" width="200" alt="Result 3"/><br><em>"A dolphin gracefully gliding through turquoise wave"</em></td>
+  <td align="center"><img src="./_Assets_/gif4.gif" width="200" alt="Result 4"/><br><em>"A unicorn grazing in a meadow under a rainbow"</em></td>
+</tr>
+</table>
+</div>
 
 ---
 
