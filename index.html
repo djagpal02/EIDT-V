@@ -343,38 +343,38 @@
 </section>
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+<!-- Results -->
+<section class="section hero" id="key-results">
+  <div class="container is-fluid">
+    <h2 class="title is-3">Key Results</h2>
+    <p class="content">
+      The quantitative comparison highlights the effectiveness of EIDT-V across multiple configurations and architectures. Our method demonstrates superior temporal coherence, perceptual quality, and structural consistency compared to baseline methods. The user study further corroborates these findings, indicating that EIDT-V achieves the best overall performance in temporal coherence, fidelity, and user satisfaction all while making no modifcations to model architecture.
+    </p>
+
+    <div class="columns is-vcentered">
+      <!-- Main Quantitative Results Image (70% width) -->
+      <div class="column is-7">
+        <figure>
+          <img src="/static/images/main_quant.png" alt="Main Quantitative Results" style="width: 100%;">
+          <figcaption class="has-text-centered">
+            <strong>Table 1:</strong> Quantitative performance comparison across metrics, demonstrating the robustness and scalability of EIDT-V.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- User Study Results Image (30% width) -->
+      <div class="column is-5">
+        <figure>
+          <img src="/static/images/user_study.png" alt="User Study Results" style="width: 100%;">
+          <figcaption class="has-text-centered">
+            <strong>Table 2:</strong> User study results showing mean rankings for temporal coherence, fidelity, and overall satisfaction.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Results -->
 
 
 
