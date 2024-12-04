@@ -1,10 +1,12 @@
-# EIDT-V
+# **EIDT-V**: *Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation*
 
-**EIDT-V**: *Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation*
+**[Project Webpage](https://djagpal02.github.io/EIDT-V/)**
+
+---
 
 This repository provides a implementation of **EIDT-V**, leveraging diffusion models and advanced methodologies for zero-shot text-to-video generation.
 
----
+
 
 <div align="center">
 <table>
