@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Video Generation, Diffusion Models, Latent Space, Text-to-Video, Prompt Switching, Model-Agnostic Methods, Unsupervised Learning, Attention Mechanisms, Large Language Models, Generative Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>EIDT-V: Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">University of Bath<br>Under Review</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/djagpal02/EIDT-V" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GIF Grid -->
+<section class="hero teaser">
+</section>
+  <div class="container is-fluid">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Generated Videos</h2>
+      <div class="columns is-multiline">
+        
+        <!-- Stable Diffusion 3 Medium -->
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_family_of_penguins_huddling__f24_b2_g9.0_ip0.0_none_previous.gif" alt="A family of penguins">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A family of penguins huddling together in a snowstorm
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_fairy_flying_around_a_glowin_f24_b2_g9.0_ip0.0_VideoText_previous.gif" alt="A fairy flying">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A fairy flying around a glowing mushroom in an enchanted forest
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_dancers_silhouette_moving_gr_f24_b2_g9.0_ip0.0_VideoText_previous.gif" alt="A dancer's silhouette">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A dancer's silhouette moving gracefully in slow motion
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_galaxy_swirling_with_stars_a_f24_b2_g9.0_ip0.0_VideoText_previous.gif" alt="A galaxy swirling">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A galaxy swirling with stars and nebulae in deep space
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_musician_playing_a_slow_peac_f24_b2_g11.0_ip0.0_VideoText_previous.gif" alt="A musician playing">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A musician playing a slow, peaceful tune on an acoustic guitar
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_peacock_displaying_its_feath_f24_b2_g9.0_ip0.0_VideoText_previous.gif" alt="A peacock displaying feathers">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A peacock displaying its feathers in slow motion
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_person_writing_slowly_in_a_j_f24_b2_g11.0_ip0.0_VideoText_previous.gif" alt="A person writing">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A person writing slowly in a journal with an ink pen
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_portal_opening_and_closing_s_f24_b2_g9.0_ip0.0_none_previous.gif" alt="A portal opening and closing">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A portal opening and closing slowly in a mystical cave
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/a_squirrel_nibbling_on_an_acor_f24_b2_g11.0_ip0.0_none_previous.gif" alt="A squirrel nibbling">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A squirrel nibbling on an acorn under a tree
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/gif3.gif" alt="A dolphin gliding">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A dolphin gracefully gliding through turquoise waves
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/gif4.gif" alt="A unicorn grazing">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> A unicorn grazing in a meadow under a rainbow
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesd3/raindrops_creating_ripples_on__f24_b2_g11.0_ip0.0_VideoText_previous.gif" alt="Raindrops creating ripples">
+            <figcaption class="has-text-centered">
+              <strong>SD3 Medium:</strong> Raindrops creating ripples on a still pond
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- SDXL -->
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_dancers_silhouette_moving_gr_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A dancer's silhouette">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A dancer's silhouette moving gracefully in slow motion
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_figure_skater_gliding_across_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A figure skater gliding">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A figure skater gliding across an ice rink with smooth turns
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_full_moon_rising_over_a_stil_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A full moon rising">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A full moon rising over a still ocean
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_galaxy_swirling_with_stars_a_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A galaxy swirling">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A galaxy swirling with stars and nebulae in deep space
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_lightning_bug_flying_through_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A lightning bug flying">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A lightning bug flying through a dark meadow
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/a_musician_playing_a_slow_peac_f24_b3_g11.0_ip0.0_VideoText_previous.gif" alt="A musician playing">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A musician playing a slow, peaceful tune on an acoustic guitar
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/gif1.gif" alt="A butterfly flapping">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A butterfly gently flapping its wings while resting on a flower
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-one-fifth">
+          <figure>
+            <img src="static/gifs/teaser/usesdxl/gif2.gif" alt="A child blowing bubbles">
+            <figcaption class="has-text-centered">
+              <strong>SDXL:</strong> A child blowing bubbles that float and pop gently
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GIF Grid -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Zero-shot, training-free, image-based text-to-video generation is an emerging area that aims to generate videos using existing image-based diffusion models. Current methods in this space require specific architectural changes to image-generation models, which limit their adaptability and scalability.
+
+            In contrast to such methods, we provide a model-agnostic approach. We use intersections in diffusion trajectories, working only with the latent values. We could not obtain localized frame-wise coherence and diversity using only the intersection of trajectories. Thus, we instead use a grid-based approach. An in-context trained LLM is used to generate coherent frame-wise prompts; another is used to identify differences between frames. Based on these, we obtain a CLIP-based attention mask that controls the timing of switching the prompts for each grid cell. Earlier switching results in higher variance, while later switching results in more coherence. Therefore, Our approach can ensure appropriate control between coherence and variance for the frames.
+
+            Our approach results in state-of-the-art performance while being more flexible when working with diverse image-generation models. The empirical analysis using quantitative metrics and user studies confirms our model’s superior temporal consistency, visual fidelity and user satisfaction, thus providing a novel way to obtain training-free, image-based text-to-video generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section hero" id="methodology">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Methodology</h2>
+    <p class="content">
+      The EIDT-V pipeline leverages diffusion intersections to enable frame-based video generation, integrating text and video modules. The text module generates framewise prompts and identifies differences across frames, while the video module uses these prompts to ensure temporal consistency and semantic coherence. Through techniques like grid prompt switching and text-guided attention, the pipeline allows fine-grained control over variance and coherence, achieving high-quality video synthesis using generic diffusion models.
+    </p>
+    <div class="columns is-vcentered">
+      <!-- Left Image with Caption (Slightly Larger) -->
+      <div class="column is-two-thirds">
+        <figure>
+          <img src="static/images/Pipeline-fig1.png" alt="Overview of the EIDT-V Pipeline for Frame-Based Video Generation" style="width: 100%;">
+          <figcaption class="has-text-centered">
+            <strong>Figure 1:</strong> Overview of the EIDT-V Pipeline. This pipeline integrates text and video modules to generate coherent frames.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Right Image with Caption -->
+      <div class="column is-one-third">
+        <figure>
+          <img src="static/images/fig-grps.png" alt="Grid Prompt Switching with Text-Guided Attention" style="width: 100%;">
+          <figcaption class="has-text-centered">
+            <strong>Figure 2:</strong> Grid Prompt Switching with Text-Guided Attention. Controlled transitions enhance motion coherence.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
